@@ -45,7 +45,7 @@ public class IntegerSet {
         }
         CheckRep();
     }
-    public void remove(Integer x){
+    public void remove(Integer x){ // ลบตัวเลข
         if(x == null)
             return ; 
             Number.remove(x) ;
@@ -56,8 +56,16 @@ public class IntegerSet {
      * @param x ตัวเลขที่ต้องการตรวจสอบ
      * @return true หากมี x อยู่ในเซต, false หากไม่มี
      */
-    public boolean contains(Integer x){
+    public boolean contains(Integer x){ // ตรวจสอบตัวในเลขเซต
         return Number.contains(x) ;
+    }
+    /**
+     * ขนาดของ Arr
+     *
+     * @return ส่งขนาดของ Arr กลับ
+     */
+    public int size(){ //ขนาดของ Arr 
+        return Number.size();
     }
     public String toString(){
         return Number.toString() ;
